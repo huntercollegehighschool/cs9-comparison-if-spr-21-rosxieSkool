@@ -20,3 +20,20 @@ not divisible by 3
 '''
 
 #write your code below
+
+def antiNegCheck(number):
+  if number == 0:
+    return ("zero")
+  elif number > 0:
+    return ("positive")
+  else:
+    return ('negative')
+
+def divByThree(number):
+  if number%3 == 0:
+    return ("divisible by 3")
+  else:
+    return("not divisible by 3")
+
+number = int(input("Enter your number: "))
+print(f'{antiNegCheck(number)}\n{divByThree(number)}')
