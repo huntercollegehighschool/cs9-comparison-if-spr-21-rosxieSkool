@@ -24,3 +24,15 @@ opposite
 '''
 
 #start writing your code below
+def twoNumberStatus(num1, num2):
+  if ((num1 > 0 and num2 < 0) or (num1 < 0 and num2 > 0)):
+    return("opposite")
+  elif (num1 > 0 and num2 > 0):
+    return ("postive")
+  else:
+    return("negative")
+
+num1 = int(input("Enter a number: "))
+num2 = int(input('Enter another number: '))
+
+print(f'{twoNumberStatus(num1, num2)}')

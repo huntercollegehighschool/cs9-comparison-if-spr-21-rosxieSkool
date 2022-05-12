@@ -22,4 +22,35 @@ Enter a month:  Saturday
 not a month
 '''
 
-#start writing your code below
+# start writing your code below
+months = {
+    "January": 1,
+    "February": 2,
+    "March": 3,
+    "April": 4,
+    "May": 5,
+    "June": 6,
+    "July": 7,
+    "August": 8,
+    "September": 9,
+    "October": 10,
+    "November": 11,
+    "December": 12
+}
+
+monthInput = input("Enter a month: ")
+monthInput = monthInput.capitalize()
+
+if months[monthInput] != 2:
+    if months[monthInput] % 2 == 0:
+        if months[monthInput] <= 6:
+            print("30")
+        else:
+            print("31")
+    else:
+        if months[monthInput] <= 6:
+            print("31")
+        else:
+            print("30")
+else:
+    print("28 or 29")
